@@ -2,7 +2,7 @@ const express = require ('express')
 const bodyParser = require('body-parser')
 const app = express()
 
-var port = env.process.PORT || 3000
+const port = process.env.PORT || 3000
 
 // Custom modules
 const scrape = require('./scrape')
