@@ -143,8 +143,11 @@ h2 {
 }
 
 @media only screen and (max-width: 750px) {
+  html {
+    height: 100%;
+  }
   h2 {
-    margin: 1rem 5rem;
+    margin: 1rem;
   }
   body, .content {
     margin: 0;
