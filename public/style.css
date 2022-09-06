@@ -98,4 +98,69 @@ h2 {
   top: -3rem;
   right: 5rem;
 }
+
+@media only screen and (max-width: 1600px) {
+  .image {
+    width: 30% !important;
+    height: 90% !important;
+    right: 0 !important;
+    background-position: center !important;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .content {
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 3rem;
+  }
+  .content h1, .content p, .content form {
+    margin: 1rem;
+    position: relative;
+    z-index: 2;
+  }
+  .content .image {
+    width: 100% !important;
+    height: 100vh;
+    right: 0;
+    background-position: bottom;
+    top: 0;
+    z-index: 0;
+    opacity: .15;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  h2 {
+    margin: 1rem 5rem;
+  }
+  body, .content {
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 100%;
+  }
+  .image {
+    height: 100% !important;
+  }
+  input {
+    width: 100% !important;
+  }
+  button {
+    size: 30% !important;
+  }
+}
 /*# sourceMappingURL=style.css.map */
